@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textviewService"
-        android:text="Service"
+        android:text="----------Service----------"
         android:layout_below="@+id/textviewAndroidBasic"
         android:layout_centerHorizontal="true"/>
     <Button
@@ -41,6 +41,61 @@
         android:text="Stop Service"
         android:layout_below="@+id/buttonStartService"
         android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewBroadcastReceiver"
+        android:text="----------Broadcast Intent----------"
+        android:layout_below="@+id/buttonStopService"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBroadcastIntent"
+        android:text="Broadcast Intent"
+        android:layout_below="@+id/textviewBroadcastReceiver"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewContentProvider"
+        android:text="----------Content Provider----------"
+        android:layout_below="@+id/buttonBroadcastIntent"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittextAddName"
+        android:hint="Name"
+        android:layout_below="@+id/textviewContentProvider"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittextAddGrade"
+        android:hint="Grade"
+        android:layout_below="@+id/edittextAddName"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAddName"
+        android:text="Add Name"
+        android:layout_below="@+id/edittextAddGrade"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRetriveStudent"
+        android:text="Retrive Student"
+        android:layout_below="@+id/buttonAddName"
+        android:layout_centerHorizontal="true"/>
 
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nexttoUI"
+        android:text="Next to User Interface"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
