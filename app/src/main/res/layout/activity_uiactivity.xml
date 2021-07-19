@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".UIActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,88 +16,88 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textviewAndroidBasic"
-        android:text="Android Basic"
+        android:id="@+id/textviewUI"
+        android:text="Android User Interface"
         android:textSize="30dp"
         android:layout_below="@+id/textviewAppName"
         android:layout_centerHorizontal="true"
         android:textColor="@color/lime"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textviewService"
-        android:text="----------Service----------"
-        android:layout_below="@+id/textviewAndroidBasic"
-        android:layout_centerHorizontal="true"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonStartService"
-        android:text="Start Service"
-        android:layout_below="@+id/textviewService"
-        android:layout_centerHorizontal="true"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonStopService"
-        android:text="Stop Service"
-        android:layout_below="@+id/buttonStartService"
+        android:id="@+id/buttonGoToGG"
+        android:text="Go to Google"
+        android:layout_below="@+id/textviewUI"
         android:layout_centerHorizontal="true"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textviewBroadcastReceiver"
-        android:text="----------Broadcast Intent----------"
-        android:layout_below="@+id/buttonStopService"
+        android:id="@+id/textviewLayoutType"
+        android:text="----------Layout type----------"
+        android:layout_below="@+id/buttonGoToGG"
         android:layout_centerHorizontal="true"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonBroadcastIntent"
-        android:text="Broadcast Intent"
-        android:layout_below="@+id/textviewBroadcastReceiver"
+        android:id="@+id/buttonLinearLayout"
+        android:text="Linear Layout"
+        android:layout_below="@+id/textviewLayoutType"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRelativeLayout"
+        android:text="Relative Layout"
+        android:layout_below="@+id/buttonLinearLayout"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonTableLayout"
+        android:text="Table Layout"
+        android:layout_below="@+id/buttonRelativeLayout"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAbsoluteLayout"
+        android:text="Absolute Layout"
+        android:layout_below="@+id/buttonTableLayout"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFrameLayout"
+        android:text="Frame Layout"
+        android:layout_below="@+id/buttonAbsoluteLayout"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonListView"
+        android:text="List View"
+        android:layout_below="@+id/buttonFrameLayout"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGridView"
+        android:text="Grid View"
+        android:layout_below="@+id/buttonFrameLayout"
         android:layout_centerHorizontal="true"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textviewContentProvider"
-        android:text="----------Content Provider----------"
-        android:layout_below="@+id/buttonBroadcastIntent"
-        android:layout_centerHorizontal="true"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/edittextAddName"
-        android:hint="Name"
-        android:layout_below="@+id/textviewContentProvider"
-        android:layout_centerHorizontal="true"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/edittextAddGrade"
-        android:hint="Grade"
-        android:layout_below="@+id/edittextAddName"
+        android:id="@+id/textviewLayoutAttribute"
+        android:text="----------Layout Attribute----------"
+        android:layout_below="@+id/buttonGridView"
         android:layout_centerHorizontal="true"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonAddName"
-        android:text="Add Name"
-        android:layout_below="@+id/edittextAddGrade"
-        android:layout_centerHorizontal="true"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonRetriveStudent"
-        android:text="Retrive Student"
-        android:layout_below="@+id/buttonAddName"
+        android:id="@+id/btnLayoutAttribute"
+        android:text="Layout Attribute"
+        android:layout_below="@+id/textviewLayoutAttribute"
         android:layout_centerHorizontal="true"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonNextToUI"
-        android:text="Next to User Interface"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

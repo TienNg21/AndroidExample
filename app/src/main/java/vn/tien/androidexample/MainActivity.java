@@ -57,6 +57,16 @@ public class MainActivity extends Activity {
                 onClickRetrieveStudents(v);
             }
         });
+        //Next to UI View
+        findViewById(R.id.buttonNextToUI).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, UIActivity.class);
+                intent.putExtra("value", "From MainActivity to UIActivity");
+                startActivity(intent);
+            }
+        });
+
     }
 
     /**
