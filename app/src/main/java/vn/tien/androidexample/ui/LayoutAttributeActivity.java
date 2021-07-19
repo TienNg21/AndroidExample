@@ -1,11 +1,14 @@
 package vn.tien.androidexample.ui;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -80,17 +83,30 @@ public class LayoutAttributeActivity extends Activity {
                 Toast.makeText(LayoutAttributeActivity.this, "onClick Toggle Button\n" + status, Toast.LENGTH_SHORT).show();
             }
         });
+        //Radio Button
+        RadioButton radioButton = findViewById(R.id.rdobtn);
+        radioButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(radioButton.isChecked()){
+                    Toast.makeText(LayoutAttributeActivity.this, "Active Radio Button", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
         //Progress Bar
-        findViewById(R.id.btnprgr).setOnClickListener(new View.OnClickListener() {
+        Button prgrBtn = findViewById(R.id.btnprgr);
+        prgrBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ProgressBar progressBar = findViewById(R.id.prgrbar);
                 if(progressBar.getVisibility() == View.GONE){
                     Toast.makeText(LayoutAttributeActivity.this, "Turn on Progress", Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.VISIBLE);
+                    prgrBtn.setText("Turn off Progress");
                 }else{
                     Toast.makeText(LayoutAttributeActivity.this, "Turn off Progress", Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
+                    prgrBtn.setText("Turn on Progress");
                 }
             }
         });
